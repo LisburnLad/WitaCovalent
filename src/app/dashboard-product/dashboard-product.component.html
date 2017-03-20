@@ -36,6 +36,15 @@
         (click)="!media.query('gt-sm') && manageList.close()"
         [routerLinkActive]="['active']"
         [routerLinkActiveOptions]="{exact:true}"
+        [routerLink]="['recent']">
+        <md-icon md-list-icon>stars</md-icon>
+        Recent Activity
+      </a>      
+      <a md-list-item 
+        md-ripple class="block relative"
+        (click)="!media.query('gt-sm') && manageList.close()"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{exact:true}"
         [routerLink]="['features']">
         <md-icon md-list-icon>star</md-icon>
         Features
@@ -52,7 +61,7 @@
       <a md-list-item (click)="!media.query('gt-sm') && manageList.close()" md-ripple class="block relative">
         <md-icon md-list-icon>settings</md-icon>
         Settings
-      </a>
+      </a>    
     </md-nav-list>
     <div td-toolbar-content layout="row" layout-align="start center" flex>
       <span>{{title}}</span>

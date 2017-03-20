@@ -32,6 +32,7 @@ import { ChartComponent } from '../components/chart/chart.component';
 import { RequestInterceptor } from '../config/interceptors/request.interceptor';
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { RecentActivityComponent } from './recent-activity/recent-activity.component';
 
 const httpInterceptorProviders: Type<any>[] = [
   RequestInterceptor,
@@ -58,6 +59,7 @@ const httpInterceptorProviders: Type<any>[] = [
     DashboardTemplateComponent,
     EmailTemplateComponent,
     EditorTemplateComponent,
+    RecentActivityComponent,
   ], // directives, components, and pipes owned by this NgModule
   imports: [
     BrowserModule,

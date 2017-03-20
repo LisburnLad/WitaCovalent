@@ -17,8 +17,9 @@ import { TemplatesComponent } from './templates/templates.component';
 import { DashboardTemplateComponent } from './templates/dashboard/dashboard.component';
 import { EmailTemplateComponent } from './templates/email/email.component';
 import { EditorTemplateComponent } from './templates/editor/editor.component';
+import { RecentActivityComponent } from './recent-activity/recent-activity.component';
 
-const routes: Routes = [
+const routes: Routes = [  
   {path: 'login', component: LoginComponent},
   {path: '', component: MainComponent, children: [{
       component: DashboardComponent,
@@ -26,6 +27,7 @@ const routes: Routes = [
     },
     {path: 'product', component: DashboardProductComponent, children: [
       {path: '', component: ProductOverviewComponent},
+      {path: 'recent', component: RecentActivityComponent},
       {path: 'stats', component: ProductStatsComponent},
       {path: 'features', children: [
         {path: '', component: ProductFeaturesComponent},
